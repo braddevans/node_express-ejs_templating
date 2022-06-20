@@ -1,11 +1,11 @@
 {
-  "name": "api-with-tests",
+  "name": "api-with-templating",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "start": "nodemon index.js"
+    "start": "nodemon --ext js,ejs --ignore data",
+    "run": "nodemon --ext js,ejs --ignore data"
   },
   "keywords": [],
   "author": "",
@@ -20,15 +20,5 @@
     "node-schedule": "^2.1.0",
     "nodemon": "^2.0.16",
     "request": "^2.88.2"
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "coveragePathIgnorePatterns": [
-      "/node_modules/"
-    ]
-  },
-  "devDependencies": {
-    "jest": "^28.1.1",
-    "supertest": "^6.2.3"
   }
 }

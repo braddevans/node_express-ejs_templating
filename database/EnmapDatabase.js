@@ -9,7 +9,7 @@ DatabaseController.basicTable = new Enmap({
     name: "basicTable",
 });
 
-DatabaseController.getDatabaseByName = (name) => {
+DatabaseController.getTableByName = (name) => {
     switch (name) {
         case "basicTable":
             return DatabaseController.basicTable;

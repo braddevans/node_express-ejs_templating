@@ -7,14 +7,14 @@ const express = require("express");
 const db = require("./database/EnmapDatabase");
 const app = express();
 
-app.appDir = __dirname
+app.appDir = __dirname;
 
 const runEvery = async () => {
     // eslint-disable-next-line no-unused-vars
     logger.log("[runEvery] setting up schedule (0 * * * *) at 0 mins past the hour");
     const j = schedule.scheduleJob("0 * * * *", async function() {
         // todo: setup tests to be run every hour
-        logger.log("[runEvery] Next run time: " + j.nextInvocation());
+        //logger.log("[runEvery] Next run time: " + j.nextInvocation());
     });
     logger.log("[runEvery] Next run time: " + j.nextInvocation());
 };

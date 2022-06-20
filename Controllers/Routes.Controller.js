@@ -33,7 +33,6 @@ RoutesController.setupRoutes = (express, app) => {
     }
 
 
-
     app.use('/js/', express.static(__dirname + '/js/'));
 };
 
